@@ -1,0 +1,15 @@
+.exercise-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 600px) {
+    .exercise-list {
+      grid-template-columns: 1fr;
+      padding: 16px;
+    }
+  }

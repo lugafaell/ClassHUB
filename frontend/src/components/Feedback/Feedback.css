@@ -1,0 +1,303 @@
+:root {
+    --primary-color: #844794;
+    --secondary-color: #f3e5f5;
+    --text-color: #333;
+    --background-color: #fff;
+    --card-background: #f9f4fa;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .feedback-component {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+  }
+  
+  .feedback-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feedback-title {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .new-feedback-btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .new-feedback-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  
+  .feedback-content {
+    padding: 1.5rem;
+  }
+  
+  .feedback-list {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .feedback-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .feedback-card-header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  
+  .feedback-card-subtitle {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .feedback-card-content {
+    padding: 1rem;
+  }
+  
+  .feedback-card-footer {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right;
+  }
+  
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialog {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 500px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .dialog h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+  }
+  
+  .dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .submit-btn,
+  .cancel-btn {
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    margin-left: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #6a3777;
+  }
+  
+  .cancel-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .select-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .select-input {
+    width: 95%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: white;
+    cursor: text;
+  }
+  
+  .select-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+  }
+  
+  .select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .select-option {
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .select-option:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .select-option-empty {
+    padding: 0.8rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Estilização da scrollbar para o select-options */
+  .select-options::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .select-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0 0 var(--border-radius) 0;
+  }
+  
+  .select-options::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  .select-options::-webkit-scrollbar-thumb:hover {
+    background: #6a3777;
+  }
+  
+  @media (max-width: 600px) {
+    .feedback-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .new-feedback-btn {
+      margin-top: 1rem;
+    }
+  
+    .dialog {
+      padding: 1.5rem;
+    }
+  }
+  
+  

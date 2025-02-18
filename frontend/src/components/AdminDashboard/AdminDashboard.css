@@ -1,0 +1,253 @@
+.adm-dashboard {
+    min-height: 100vh;
+    background-color: rgb(240, 240, 227);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.adm-dashboard__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.adm-dashboard__header {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adm-dashboard__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #844794;
+    display: flex;
+    align-items: center;
+}
+
+.adm-dashboard__icon {
+    margin-right: 0.5rem;
+}
+
+.adm-dashboard__search {
+    position: relative;
+}
+
+.adm-dashboard__search-input {
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.adm-dashboard__search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.adm-dashboard__tabs {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.adm-dashboard__tab {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.adm-dashboard__tab:hover {
+    background-color: #e0e0e0;
+}
+
+.adm-dashboard__tab--active {
+    background-color: white;
+    font-weight: bold;
+}
+
+.adm-dashboard__tab-icon {
+    margin-right: 0.5rem;
+}
+
+.adm-dashboard__table-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.adm-dashboard__table-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.adm-dashboard__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.adm-dashboard__table-header {
+    background-color: #844794;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+}
+
+.adm-dashboard__table-cell {
+    padding: 1rem;
+}
+
+.adm-dashboard__row--even {
+    background-color: #f8f8f8;
+}
+
+.adm-dashboard__row--odd {
+    background-color: white;
+}
+
+.adm-dashboard__action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease;
+    color: #666;
+}
+
+.adm-dashboard__action-btn:hover {
+    transform: scale(1.2);
+}
+
+.adm-dashboard__action-btn--edit:hover {
+    color: #844794;
+}
+
+.adm-dashboard__action-btn--delete:hover {
+    color: #ff4444;
+}
+
+.adm-dashboard__dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adm-dashboard__dialog {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 400px;
+    max-width: 90%;
+}
+
+.adm-dashboard__dialog-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #844794;
+}
+
+.adm-dashboard__form-group {
+    margin-bottom: 1rem;
+}
+
+.adm-dashboard__form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.adm-dashboard__form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.adm-dashboard__dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.adm-dashboard__btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.adm-dashboard__btn--save {
+    background-color: #844794;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.adm-dashboard__btn--save:hover {
+    background-color: #6a3777;
+}
+
+.adm-dashboard__btn--cancel {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.adm-dashboard__btn--cancel:hover {
+    background-color: #e0e0e0;
+}
+
+.adm-dashboard__btn--delete {
+    background-color: #ff4444;
+    color: white;
+}
+
+.adm-dashboard__btn--delete:hover {
+    background-color: #cc0000;
+}
+
+.adm-dashboard__form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .adm-dashboard__form-select option {
+    padding: 0.5rem;
+  }
+  
+  .adm-dashboard__form-select option:checked {
+    background-color: #844794;
+    color: white;
+  }
+  
+  .adm-dashboard__form-select:focus {
+    outline: none;
+    border-color: #844794;
+    box-shadow: 0 0 0 2px rgba(132, 71, 148, 0.2);
+  }
+  
+  .adm-dashboard__form-select option:hover {
+    background-color: #f0f0f0;
+  }

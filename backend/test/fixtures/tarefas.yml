@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  descricao: MyText
+  data_entrega: 2025-02-09
+  turma: MyString
+  professor: one
+  escola: one
+  status: MyString
+
+two:
+  titulo: MyString
+  descricao: MyText
+  data_entrega: 2025-02-09
+  turma: MyString
+  professor: two
+  escola: two
+  status: MyString

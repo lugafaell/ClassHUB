@@ -1,0 +1,89 @@
+.modal-overlay-create {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content-create {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  h2 {
+    color: #844794;
+    margin-bottom: 20px;
+  }
+  
+  .form-group-create {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #844794;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-select-create {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .button-group-create {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"] {
+    background-color: #844794;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6a3776;
+  }
+  
+  button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #bbb;
+  }

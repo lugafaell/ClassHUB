@@ -1,0 +1,30 @@
+.page-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 227);
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section-title{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .page-container {
+        display: flex;
+        width: 100%;
+        height: 150vh;
+        background-color: white;
+    }
+
+    .section-container{
+        padding-top: 60px;
+    }
+}

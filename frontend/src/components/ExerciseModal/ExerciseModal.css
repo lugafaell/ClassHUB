@@ -1,0 +1,104 @@
+.modal-overlay-aluno {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content-aluno {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header-aluno {
+    background-color: #844794;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header-aluno h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .close-button-aluno {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .modal-body-aluno {
+    padding: 20px;
+  }
+  
+  .modal-description-aluno {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .modal-details-aluno {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .detail-item-aluno {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .detail-icon-aluno {
+    color: #844794;
+  }
+  
+  .detail-label-aluno {
+    font-weight: bold;
+    color: #333;
+    min-width: 100px;
+  }
+  
+  .detail-value-aluno {
+    color: #555;
+  }
+  
+  .modal-footer-aluno {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: #f9fafb;
+  }
+  
+  .complete-button-aluno {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #844794;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .complete-button-aluno:hover {
+    background-color: #5b21b6;
+  }

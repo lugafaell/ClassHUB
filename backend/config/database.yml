@@ -1,0 +1,32 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+development:
+  <<: *default
+  database: eduDB
+  username: postgres
+  password: 200565
+  host: localhost
+
+
+production:
+  primary: &primary_production
+    <<: *default
+    database: edu_project_production
+    username: edu_project
+    password: <%= ENV["EDU_PROJECT_DATABASE_PASSWORD"] %>
+  cache:
+    <<: *primary_production
+    database: edu_project_production_cache
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *primary_production
+    database: edu_project_production_queue
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *primary_production
+    database: edu_project_production_cable
+    migrations_paths: db/cable_migrate
