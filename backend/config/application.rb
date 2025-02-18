@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module EduProject
   class Application < Rails::Application
-    config.jwt_secret_key = 'd35b97e588175a8ea1dabcb7a24a98e6125db625741c4606ed51695d54b9695ca9d0933720c04d3628c66f0bc0bcabdb1cabb33fdee715c79718cd229b9b286c'
+    config.jwt_secret_key = 'sua_key'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
 
